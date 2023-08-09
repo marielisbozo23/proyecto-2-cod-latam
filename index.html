@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marielis R. Bozo Mendez</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="#inicio"> 
+            <img src="img/Mi logo.png"
+            alt="mi logo" class="logo" width="80">
+        </a>  
+        
+        <!--Menú hamburguesa-->
+        
+        <button id="menu_hamburguer" aria-label="menu_hamburguer">
+            <i class="bi bi-list" id="open_menu"></i>
+            <i class="bi bi-x-lg" id="close_menu"></i>
+        </button>
+
+        <!-- Menu de la Pagina-->
+        <nav>
+            <ul id="menu">
+                <li class= "menu.item active"> <a href="#inicio"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg> Inicio </a> </li>
+                <li class= "menu.item"> <a href="#contacto"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"/>
+                    <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                    <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                  </svg> Contacto </a> </li>
+
+            <button id="modo-oscuro">
+                <i class="bi bi-brightness-high" id="claro"></i>
+                <i class="bi bi-moon-stars-fill" id="oscuro"></i>
+            </button>
+           </ul>
+        </nav>
+    </header>
+    <br>
+
+    <!-- Primera seccion de Inicio-->
+    <main>
+        <section id="inicio">
+            <figure class="foto">
+                <img src="img/IMG_20220717_215516_433 (1).jpg" alt="mi foto" width="400">
+            </figure>
+            <article class="presentacion">
+                <h1> Hola! Soy Marielis</h1>
+                <p> Abogada de Profesion, actualmente incursionando en el area tecnologica capacitandome en el area de programacion. Me encuentro realizando diversos cursos entre los cuales se destacan: Introduccion a Base de Datos SQL, Tester QA y Desarrollo Web.  
+                    Tras años de experiencia, he tomado la decision de reorientar mi carrera profesional con el animo de continuar aprendiendo y, tambien, aportar con toda mi experiencia adquirida. Considero que el cambio es un signo de capacidad de superacion y, por ello, creo que seria capaz de aportar valor en la institucion en la que me encuentre.
+
+                </p>
+            <button class="click"> <a href="documentos/CV-MARIELISBOZO.pdf" target="_blank" > Descargar mi CV</a> </button> 
+        </article>
+        </section>
+
+       <!-- Segunda seccion de Contacto-->
+        <section id="contacto">
+            <article class="sobremi">
+                <h2> Un poco sobre mi!</h2>
+                <p> Entre las Habilidades Cognitivas que mas destacan de mi podria mencionar:
+                    <li>Planificacion</li>
+                    <li>Memorizacion</li>
+                    <li>Lenguaje</li>
+                    <li>Razonamiento</li>
+                    <li>Motivacion</li>
+                    <br>
+                    Dentro  de mis habilidades extras se encuentra el Deporte, fui atleta de alto rendimiento desde los 11 años y eso me enseño a implementar la disciplina en mi vida. Me encanta bailar, leer y cocinar.
+                </p>
+            </article>
+            <ul id="iconos">
+                <li> <a href="mailto:marielisbozo23@gmail.com" target="_blank" aria-label="gmail"> <img src="img/mail.png" alt="correo" class="iconos" width="90"> </a> </li>
+                <li> <a href="https://github.com/marielisbozo23" target="_blank" aria-label="pagina Github"> <img src="img/github.png" alt="github" class="iconos" width="90"> </a> </li>
+                <li> <a href="https://ar.linkedin.com/" target="_blank" aria-label="Pagina linkedin"> <img src="img/linkedin.png" alt="linkedin" class="iconos" width="90"> </a> </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer> <link rel="stylesheet" href=""><i class="bi bi-c-circle"></i> Marielis R. Bozo Mendez </footer>
+   
+<script src="js/main.js"></script>
+</body>
+</html>

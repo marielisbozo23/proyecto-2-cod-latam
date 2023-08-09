@@ -1,0 +1,288 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital@1&display=swap');
+
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+body { font-family: 'Lato', sans-serif;
+       font-size: 18px;
+       background-color: #ffe0e9;
+       line-height: 1.2;
+       color: #0f0f0f;
+}
+
+header { 
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 16px;
+       height: 90px;
+       width: 100%;
+       background-color: rgb(227, 156, 199);
+       box-shadow: 0  3px  10px  -5px  #5f5f5f;
+       position: fixed;
+       top: 0;
+       left: 0;
+    }
+ 
+ /*menu */
+
+   #menu_hamburguer {
+     background: transparent;
+     border: 0;
+     outline: 0;
+     font-size: 20px;
+     width: 40px;
+     height: 40px;
+    }
+
+    i#close_menu {
+     display: none;
+    }
+
+    nav {
+     display: none;
+    }
+
+    /* Estilos para el Menu Mobile*/
+
+    body.mobile-menu-active {
+     overflow: hidden;
+    }
+
+    body.mobile-menu-active i#close_menu {
+     display: block;
+    }
+
+    body.mobile-menu-active i#open_menu {
+     display: none;
+    }
+
+    body.mobile-menu-active header {
+     height: 30vh;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     transition: height 0.3s;
+    }
+
+    body.mobile-menu-active nav {
+     display: block;
+     width: 100%;
+     height: 50%;
+    }
+
+    body.mobile-menu-active nav ul#menu {
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     height: 100%;
+    }
+
+ /* Modo Oscuro */
+
+   body.modo-oscuro {
+     background-color: #3e3c3c;
+     color: aliceblue;
+   }
+
+   body.modo-oscuro header {
+     background-color: #343333;
+     color: floralwhite;
+   }
+
+  body.modo-oscuro button.click {
+     background-color: rgb(121, 34, 100);
+   }
+ 
+  body.modo-oscuro article.sobremi {
+     background-color: rgb(121, 34, 100);
+     padding: 45px ;
+     border-radius: 15px ;
+     max-width: 700px;
+   }
+
+  body.modo-oscuro ul#iconos li {
+     background-color: rgb(88, 88, 88);
+     padding: 50px ;
+     border-radius: 15px ;
+     max-width: 800px;
+    }
+
+  #modo-oscuro {
+     background-color: #af599e;
+     border-radius: 40px;
+     width: 60px;
+     height: 40px;
+    }
+ 
+  nav ul { 
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+
+  ul#menu li a {
+       padding: 16px;
+       display: inline-block; 
+       justify-content: space-between;
+       font-weight: bold;
+    }
+
+    ul#menu li:hover, .active {
+        background-color: #af599e;
+        color: #fbfbfb;
+        transition: background-color 0.4s;
+    }
+
+
+  section{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 20px;
+       min-height: 100vh;
+       margin-top: 20px;
+       width: 100%;
+    }
+       
+  section#inicio {
+       justify-content: space-around;
+    }
+
+  figure.foto {
+       margin-bottom: 30px;
+    }
+
+  figure.foto img {
+       margin-top: 40px;
+       border-radius: 50%;
+       width: 400px;
+       padding: 20px;
+    }
+
+  h1 {
+       font-size: 36px;
+       text-align: center;
+        margin-top: 20px;
+    } 
+     
+  article.presentacion {
+       text-align: center;
+    }
+
+  button.click {
+       background-color: #af599e;
+       color: #fbfbfb;
+       padding: 14px  20px;
+       border-radius: 50px;
+       font-size: 22px;
+       display: inline-block;
+       text-align: center;
+    }
+
+  p {
+       text-align: center;
+       margin: 16px 0;
+    }
+
+  h2 {
+       font-size: 28px;
+       text-align: center;
+    }
+    
+
+  .sobremi{
+       background: rgba(175, 89, 158, 0.3) ;
+       text-align: center;
+       padding: 20px;
+       border-radius: 10px;
+       max-width: 500px;
+       width: 100%;
+       margin-top: 150px;
+       margin-bottom: 40px;
+    }
+
+  ul#iconos {
+       display: flex;
+       margin-top: 20px;
+    }
+
+  ul#iconos li {
+       margin: 16px;
+       padding: 8px;
+       border-radius: 4px;
+    }
+
+
+  footer {
+       height: 90px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #af599e;
+       color: #fbfbfb;
+    }
+  
+   @media (min-width: 1024px) {
+    section#inicio{
+    flex-direction: row;
+    }
+    
+    article.sobremi {
+     text-align: center; 
+     width: 60%;  
+    }
+
+    a.click {
+     justify-content: center;
+    }
+    
+    p{
+    text-align: center;
+    }
+
+    h1 {
+    font-size: 50px;
+    text-align: center;
+    }
+
+    #menu_hamburguer {
+     display: none;
+    }
+
+    nav {
+     display: block;
+    }
+
+}
+
+
+/* Para quitar los puntos a los items de listas */
+ul {
+     list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+     text-decoration: none;
+     color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+     max-width: 1200px;
+     margin: auto;
+}
